@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(cd d:/code/PracticeWork/Portfolio && rm -rf src/styles/*.module.css)"
+    ],
+    "additionalDirectories": [
+      "d:\\code\\PracticeWork\\src\\styles"
+    ]
+  }
+}

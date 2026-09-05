@@ -1,0 +1,154 @@
+/* ── Terminal Window ──────────────────────────────────────── */
+
+.terminal {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.window {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(59, 130, 246, 0.08);
+}
+
+/* ── Title Bar ───────────────────────────────────────────── */
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-secondary);
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.dotRed { background: #ef4444; }
+.dotRed:hover { background: #dc2626; }
+.dotYellow { background: #eab308; }
+.dotYellow:hover { background: #ca8a04; }
+.dotGreen { background: #22c55e; }
+.dotGreen:hover { background: #16a34a; }
+
+.titleText {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleSpacer {
+  width: 52px;
+}
+
+/* ── Content Area ────────────────────────────────────────── */
+
+.content {
+  height: 300px;
+  overflow-y: auto;
+  padding: 16px;
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.line {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+/* ── Prompt Segments ─────────────────────────────────────── */
+
+.prompt {
+  color: var(--text-muted);
+}
+
+.promptUser {
+  color: var(--accent);
+}
+
+.promptSep {
+  color: var(--accent-hover);
+}
+
+.promptDir {
+  color: #38bdf8; /* sky-400 */
+}
+
+.promptDollar {
+  color: var(--text-muted);
+}
+
+/* ── Output ──────────────────────────────────────────────── */
+
+.outputText {
+  color: var(--text-secondary);
+}
+
+/* ── Cursor ──────────────────────────────────────────────── */
+
+.cursorBlock {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background: var(--text-primary);
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.cursorHidden {
+  opacity: 0;
+}
+
+/* ── Syntax Highlighting Tokens ──────────────────────────── */
+
+.token_command   { color: #60a5fa; } /* blue-400 */
+.token_flag      { color: #38bdf8; } /* sky-400 */
+.token_string    { color: #fbbf24; } /* amber-400 */
+.token_number    { color: #c084fc; } /* purple-400 */
+.token_operator  { color: #f87171; } /* red-400 */
+.token_path      { color: #22d3ee; } /* cyan-400 */
+.token_variable  { color: #f472b6; } /* pink-400 */
+.token_comment   { color: var(--text-muted); }
+.token_default   { color: var(--text-secondary); }
+
+/* ── Responsive ──────────────────────────────────────────── */
+
+@media (max-width: 968px) {
+  .content {
+    height: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal {
+    font-size: 11px;
+  }
+
+  .content {
+    height: 240px;
+    padding: 12px;
+  }
+}

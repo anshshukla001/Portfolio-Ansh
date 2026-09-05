@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.scrolled {
+  background: rgba(11, 11, 16, 0.9);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.desktopLinks {
+  display: none;
+  gap: 4px;
+}
+
+@media (min-width: 768px) {
+  .desktopLinks {
+    display: flex;
+  }
+}
+
+.navLink {
+  position: relative;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.navLink.active {
+  color: var(--accent);
+}
+
+.activeIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.mobileToggle {
+  display: block;
+  padding: 8px;
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .mobileToggle {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  background: rgba(11, 11, 16, 0.95);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.mobileLink {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-left: 2px solid transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.mobileLink:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.mobileLink.active {
+  color: var(--accent);
+  background: var(--bg-card);
+  border-left-color: var(--accent);
+}
