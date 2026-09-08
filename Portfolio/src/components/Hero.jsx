@@ -123,9 +123,9 @@ export default function Hero() {
                 '🚀 Building modern web experiences',
               ],
               1: [
-                'react.js    next.js     node.js     express',
+                'react.js    java        .Net        c#',
                 'javascript  typescript  python      mongodb',
-                'tailwind    framer      git         docker',
+                'tailwind    SQL         git         docker',
               ],
               2: [
                 'a1b2c3d  feat: add AI thief detection system',
