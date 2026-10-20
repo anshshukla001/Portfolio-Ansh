@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiDownload, FiMapPin } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMapPin } from 'react-icons/fi'
 import { HiOutlineSparkles } from 'react-icons/hi'
 import { useTypingEffect } from '../hooks/useTypingEffect'
 import HeroTerminal from './HeroTerminal'
@@ -77,10 +77,6 @@ export default function Hero() {
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
             }}>
               Get in Touch
-            </a>
-            <a href="#" className={styles.secondaryBtn}>
-              <FiDownload size={16} />
-              Resume
             </a>
           </motion.div>
 
