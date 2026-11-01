@@ -11,8 +11,8 @@ const footerLinks = [
 ]
 
 const socials = [
-  { icon: <FiGithub />, href: 'https://github.com', label: 'GitHub' },
-  { icon: <FiLinkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { icon: <FiGithub />, href: 'https://github.com/anshshukla001', label: 'GitHub' },
+  { icon: <FiLinkedin />, href: 'https://linkedin.com/in/ansh-shukla001', label: 'LinkedIn' },
   { icon: <FiTwitter />, href: 'https://twitter.com', label: 'Twitter' },
 ]
 

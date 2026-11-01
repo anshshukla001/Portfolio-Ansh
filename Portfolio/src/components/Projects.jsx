@@ -18,7 +18,7 @@ const projects = [
     tech: ['React Native', 'Expo', 'TypeScript', 'MongoDB'],
     image: null,
     color: '#f43f5e',
-    live: '#',
+    live: 'https://drive.google.com/drive/folders/1xoztLpbI187eNwXyv7eikS_4kf4YZHG-?usp=sharing',
     code: 'https://github.com/anshshukla001/SubPilot',
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     tech: ['React', 'Vite', 'Framer Motion', 'CSS Modules'],
     image: null,
     color: '#0ea5e9',
-    live: '#',
+    live: 'https://portfolio-ansh-shukla.vercel.app',
     code: 'https://github.com/anshshukla001/Portfolio-Ansh',
   },
 ]
